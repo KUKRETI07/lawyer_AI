@@ -1,4 +1,4 @@
-const API_URL = "https://api-inference.huggingface.co/models/shristi0777/llama3-merged-lawyer";
+const API_URL = "http://localhost:3001/api/chat";
 const API_KEY = "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"; 
 
 document.getElementById('send-btn').addEventListener('click', async () => {
