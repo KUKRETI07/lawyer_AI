@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "my-llm-ui/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "my-llm-ui/dist"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "my-llm-ui/$1" }
+  ]
+}
